@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - 6x6 Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2048</h1>
+            <div class="scores-container">
+                <div class="score-container">
+                    <div class="score-label">SCORE</div>
+                    <div id="score" class="score">0</div>
+                </div>
+                <div class="score-container">
+                    <div class="score-label">BEST</div>
+                    <div id="best-score" class="score">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="above-game">
+            <p class="game-intro">Join the tiles, get to <strong>2048!</strong></p>
+            <button id="new-game-btn" class="new-game-button">New Game</button>
+        </div>
+
+        <div class="game-container">
+            <div id="grid-container" class="grid-container"></div>
+            <div id="tile-container" class="tile-container"></div>
+            <div id="game-message" class="game-message hidden">
+                <p></p>
+                <button class="retry-button">Try again</button>
+            </div>
+        </div>
+
+        <div class="game-explanation">
+            <p><strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. Tiles with the same number <strong>merge into one</strong> when they touch. Add them up to reach <strong>2048!</strong></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
