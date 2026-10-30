@@ -1,0 +1,13 @@
+{
+  "name": "2048-game",
+  "version": "1.0.0",
+  "description": "A polished clone of the 2048 game in vanilla JavaScript",
+  "main": "src/game.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": ["2048", "game", "javascript", "vanilla-js", "puzzle"],
+  "author": "",
+  "license": "MIT"
+}
